@@ -11,8 +11,13 @@ const verb1 = ______
 Change thses values to generate a different story
 */
 
+const noun1 = "Bob";
+const adj1 = "fluffy";
+const place1 = "zoo";
+const noun2 = "hippo";
+
 const story = `
-**replace this with your story using a template string**
+${noun1} went to the ${place1} today and met a ${adj1} ${noun2}!
 `
 
 console.log(story)
