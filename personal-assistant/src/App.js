@@ -1,10 +1,23 @@
 import React from 'react'
-// import COMPONENT from 'FILEPATH'
+
+import TodoPage from './containers/TodoPage';
+import GreetingPage from './containers/GreetingPage';
+import NavBar from './components/NavBar';
+
+import { Switch, Route } from 'react-router-dom';
 
 const App = () => (
   <div>
-    Beep boop. Hi there, I&apos;m your personal assistant :D
+    <NavBar />
+    <Switch>
+      <Route path="/todo">
+        <TodoPage />
+      </Route>
+      <Route path="/">
+        <GreetingPage />
+      </Route>
+    </Switch>
   </div>
-)
+);
 
 export default App
